@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/help_us_view"
+        android:textColor="@color/black"
+        android:text="Help us improve"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_below="@+id/help_us_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:minLines="6"
+        android:gravity="top|left"
+        android:textColor="@color/black"
+        android:id="@+id/report_edit_view"/>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_below="@+id/report_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_weight="1"
+            android:background="@drawable/right_round_btn"
+            android:textColor="@color/textColorSecondary"
+            android:id="@+id/cancel_btn"
+            android:text="Cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_weight="1"
+            android:textColor="@color/textColorSecondary"
+            android:id="@+id/submit_btn"
+            android:text="Submit"
+            android:background="@drawable/left_round_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
